@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="main.css" />
+
+    <title>Weather APP</title>
+  </head>
+  <body>
+    <div class="card-one">
+      <div class="search">
+        <input type="text" placeholder="City name" class="city-search" />
+        <button><img src="./images/search.svg" alt="" /></button>
+      </div>
+      <div class="weather">
+        <img src="./images/rain-xxl.png" alt="" class="weather-icon" />
+        <h1 class="temp"></h1>
+        <h2 class="city"></h2>
+        <div class="details">
+          <div class="col">
+            <img src="./images/water-xxl.png" alt="" class="weather-icon" />
+            <div>
+              <div class="humidity"></div>
+              <div>Humidity</div>
+            </div>
+          </div>
+          <div class="col">
+            <img src="./images/wind.png" alt="" class="weather-icon" />
+            <div>
+              <div class="wind"></div>
+              <div>Wind Speed</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="weather.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  </body>
+</html>
